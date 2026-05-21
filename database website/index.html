@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Flood Warning System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="modern-nav">
+        <div class="logo">FloodGuard AI</div>
+        <ul class="nav-links">
+            <li><a href="#" class="nav-item">Home</a></li>
+            <li><a href="#" class="nav-item">Dashboard</a></li>
+            <li><a href="#" class="nav-item">Routes</a></li>
+            <li><a href="#" onclick="handleAuthorityLogin(event)" class="nav-item login-btn">Authority Login</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <img src="hero.png" alt="AI Flood System Cover" class="cover-img">
+        <div class="hero-text">
+            <h1>AI-BASED FLOOD WARNING & NAVIGATION</h1>
+            <p>Real-time monitoring and safe route mapping using sensor data.</p>
+            <button class="btn-emergency" onclick="window.location.href='tel:1122'">Emergency Alerts</button>
+        </div>
+    </header>
+
+    <section class="dashboard-main-bg">
+        <div class="content-overlay-clean">
+            <div class="card sensor-card">
+                <h3>Sensor Data</h3>
+                <p id="water-level">Water Level: Loading...</p>
+                <button class="card-btn btn-blue" onclick="fetchLiveFloodData()">View Data</button>
+            </div>
+            <div class="card alerts-card">
+                <h3>Active Alerts</h3>
+                <p>Risk Level: Low</p>
+                <button class="card-btn btn-orange" onclick="checkSystemStatus()">Check Status</button>
+            </div>
+            <div class="card nav-card">
+                <h3>Safe Navigation</h3>
+                <button class="nav-btn-bold" onclick="window.open('https://www.google.com/maps', '_blank')">Find Safe Route</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <h2 class="section-title">How It Works</h2>
+        <div class="steps-container">
+            <div class="step-card">
+                <div class="step-icon">📡</div>
+                <h4>Real-time Sensing</h4>
+                <p>Ultrasonic sensors monitor water levels 24/7 in high-risk areas.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-icon">🧠</div>
+                <h4>AI Analysis</h4>
+                <p>Our AI models process data to predict flood risks before they happen.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-icon">🗺️</div>
+                <h4>Safe Navigation</h4>
+                <p>Dynamic route mapping guides you away from flooded zones instantly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-footer-zone">
+        <div class="weather-widget">
+            <h3>Current Weather</h3>
+            <div class="weather-info">
+                <span class="temp">28°C - Rainy</span>
+            </div>
+            <button class="card-btn btn-blue" onclick="window.open('https://www.google.com/search?q=weather', '_blank')">Check Live Weather</button>
+        </div>
+        
+        <div class="emergency-contacts">
+            <h3>Emergency Help</h3>
+            <p>Rescue 1122 | PDMA: 1700</p>
+            <button class="btn-emergency" onclick="window.location.href='tel:1122'">Call Support</button>
+        </div>
+    </section>
+
+    <footer class="modern-footer">
+        <div class="footer-content">
+            <p>© 2026 <strong>FloodGuard AI</strong> | Precision Safety</p>
+            <p class="credit">Designed by BSE-IVA ✨</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+/* General Setup */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    /* Poori website ka background bg.png set kar diya */
+    background: url('bg.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Navbar Update */
+/* Navbar matching with Footer Color */
+nav.modern-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px; /* Side space barha di */
+    background: #0a0f1e; /* Exactly footer wala color */
+    color: white;
+    border-bottom: 2px solid #1a2a6c;
+    position: sticky; /* Taake scroll karte waqt upar hi rahe */
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 35px; /* Links ke darmiyan behtar space */
+}
+
+/* Clickable Nav Items */
+.nav-item {
+    color: #cbd5e0;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.nav-item:hover {
+    color: #3498db;
+    background: rgba(52, 152, 219, 0.1); /* Halka sa highlight */
+}
+
+/* Authority Login Button Special Look */
+.login-btn {
+    border: 1px solid #3498db;
+    color: #3498db !important;
+}
+
+.login-btn:hover {
+    background: #3498db;
+    color: white !important;
+}
+/* Hero section ko navbar ke niche thora gap dene ke liye */
+.hero {
+    margin-top: 0;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+nav ul { display: flex; list-style: none; margin: 0; align-items: center;}
+nav ul li { margin-left: 20px; }
+nav ul li a { color: white; text-decoration: none; font-size: 18px; }
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.cover-img {
+    width: 100%;    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: none; 
+    padding: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); 
+}
+
+/* Dashboard Section */
+.dashboard-main-bg {
+    width: 100%;
+    min-height: 550px;
+    /* Yahan background ko transparent rakha ha kyunke body par bg.png laga hua ha */
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.content-overlay-clean {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.4); 
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+}
+
+/* Card Styling */
+.card {
+    position: relative;
+    background: white;
+    padding: 40px 20px;
+    width: 28%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.card h3 {
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: #1a2a6c;
+}
+
+.card p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.sensor-card::before { background-image: url('risk.png'); }
+.alerts-card::before { background-image: url('alert.png'); }
+.nav-card::before { background-image: url('map.png'); }
+
+/* NEW SECTIONS STYLING */
+.section-title {
+    text-align: center;
+    color: #1a2a6c;
+    font-size: 32px;
+    margin: 50px 0;
+    text-transform: uppercase;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10% 50px 10%;
+}
+
+.step-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    width: 25%;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.step-icon { font-size: 40px; margin-bottom: 15px; }
+
+/* Blue Patti aur ajeeb background hatane ke liye updated style */
+.info-footer-zone {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 10%;
+    /* Blue patti ki jagah semi-transparent dark shade */
+    background: rgba(15, 23, 42, 0.85); 
+    backdrop-filter: blur(10px);
+    color: white;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.weather-widget, .emergency-contacts {
+    text-align: center;
+}
+
+.weather-info {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Modern Footer Styling - No Blue Strip */
+.modern-footer {
+    background: #0a0f1e; /* Deep Black-Blue for a premium look */
+    color: #a0aec0;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid #1a2a6c;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.footer-content strong {
+    color: #3498db;
+}
+
+.credit {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+/* Button glow effect for Weather */
+.btn-blue:hover {
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Buttons */
+.card-btn, .nav-btn-bold, .btn-emergency {
+    margin-top: 15px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn-blue { background: #3498db; color: white; }
+.btn-orange { background: #f39c12; color: white; }
+.btn-emergency { background: #ff4b2b; color: white; }
+.nav-btn-bold { 
+    background: linear-gradient(to right, #1a2a6c, #3498db); 
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f172a;
+    color: white;
+}
+.login-container {
+    width: 380px;
+    margin: 100px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1); /* Frosted glass effect */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff4a22; /* Emergency alert wala orange/red accent */
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #e03d19;
+}
+
+.back-home {
+    display: block;
+    margin-top: 15px;
+    color: #3498db;
+    text-decoration: none;
+    font-size: 14px;
+}
