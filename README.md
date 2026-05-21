@@ -11,6 +11,7 @@ You can download the full project report here:
 
 UI SCREENS:
 ![UI](https://github.com/laibaali37405-ai/AI-Based-Flood-Navigation-System/blob/main/Website%20UI.jpg?raw=true)
+![U2](https://github.com/laibaali37405-ai/AI-Based-Flood-Navigation-System/blob/main/UI%202.jpg?raw=true)
 
 
 ## 🎥 Video Demo
