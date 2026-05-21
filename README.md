@@ -7,8 +7,8 @@ This project leverages AI to analyze flood data and provide navigation assistanc
 
 ## 📊 Project Report
 You can download the full project report here:
-[Download AI-Based Flood Navigation System Report](path/to/your-report.pdf)
-*(Replace 'path/to/your-report.pdf' with your actual PDF filename)*
+[Download AI-Based Flood Navigation System Report].(https://github.com/laibaali37405-ai/AI-Based-Flood-Navigation-System/blob/main/github%20report.pdf)
+
 
 ## 🎥 Video Demo
 [Watch the System Demo Here] https://youtu.be/oTWpo1ir7sE
